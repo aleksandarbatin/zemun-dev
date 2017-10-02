@@ -26,7 +26,8 @@
 	));
 
 // Base.
-
+	@import 'base/reset';
+	@import 'base/baseConfig';
 	@import 'base/page';
 	@import 'base/typography';
 

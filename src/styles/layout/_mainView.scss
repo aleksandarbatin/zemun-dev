@@ -12,13 +12,37 @@
 		.teaser {
 			width: 100%;
 			.content {
+				@include absolute(center);
 				width: 60%;
+				h2 {
+					color:_palette(bg);
+				}
+				p {
+					color: _palette(bg);
+				}
+				a {
+					color: _palette(bg)!important;
+					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.3);
+					&:hover {
+						box-shadow: inset 0 0 0 1px #2ebaae!important;
+    					color: #2ebaae !important;
+					}
+				}
 			}
-			img {
-				width: 100%;
-
-				
+			.imgWrapper {
+				img {
+					width: 100%;
+				}
+				&:before {
+				    content: '';
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    width: 100%;
+				    height: 100%;
+				    opacity: 0.25;
+    				background-color: #333333;
+				}		
 			}
 		}
-		
 	}
