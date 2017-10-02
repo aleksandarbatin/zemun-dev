@@ -1,6 +1,7 @@
 const {resolve} = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     context: resolve(__dirname, 'src'),
@@ -9,7 +10,9 @@ module.exports = {
         // the entry point of our app
     ],
     output: {
+        path: resolve(__dirname, 'dist'),
         filename: 'main.js',
+        // publicPath: '/dist'
     },
     devtool: 'source-map',
     module: {
@@ -38,12 +41,32 @@ module.exports = {
                 test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
                 use: 'url-loader'
             },
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
+            },
+            {
+                test: /\.(jpg|png)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].[ext]",
+                            outputPath: "images/",
+                            publicPath: "images/"
+                        }
+                    }
+                ]
+            }
         ]
     },
     plugins: [
         new webpack.NamedModulesPlugin(),
         // prints more readable module names in the browser console on HMR updates
 
-        new ExtractTextPlugin({filename: 'main.css', allChunks: true})
+        new ExtractTextPlugin({filename: 'main.css', allChunks: true}),
+        new HtmlWebpackPlugin({
+            template: "index.html"
+        })
     ],
 };

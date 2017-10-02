@@ -9,11 +9,10 @@ import React, { Component } from 'react';
 class Sidebar extends Component {
 	render() {
 		return (
-		
 				<section id="sidebar">
 					{/* Intro */}
 						<section id="intro">
-							<a href="#" className="logo"><img src="images/logo.jpg" alt="" /></a>
+							<a href="#" className="logo"><img src="./images/logo.jpg" alt="" /></a>
 							<header>
 								<h2>Future Imperfect</h2>
 								<p>Another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
@@ -29,9 +28,9 @@ class Sidebar extends Component {
 										<header>
 											<h3><a href="#">Vitae sed condimentum</a></h3>
 											<time className="published" datetime="2015-10-20">October 20, 2015</time>
-											<a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
+											<a href="#" className="author"><img src="./images/avatar.jpg" alt="" /></a>
 										</header>
-										<a href="#" className="image"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="#" className="image"><img src="./images/pic04.jpg" alt="" /></a>
 									</article>
 
 								{/*  Mini Post */}
@@ -41,7 +40,7 @@ class Sidebar extends Component {
 											<time className="published" datetime="2015-10-19">October 19, 2015</time>
 											<a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
 										</header>
-										<a href="#" className="image"><img src="images/pic05.jpg" alt="" /></a>
+										<a href="#" className="image"><img src="./images/pic05.jpg" alt="" /></a>
 									</article>
 
 								{/*  Mini Post */}
