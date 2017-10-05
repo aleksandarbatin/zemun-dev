@@ -8,6 +8,9 @@
 
 	body {
 		padding-top: 3.5em;
+		@include breakpoint(small) {
+			padding-top: _size(element-height);
+		}
 	}
 
 	#header {

@@ -4,7 +4,7 @@
 
 
 import React, { Component } from 'react';
-import Sidebar from '../sidebar/sidebar';
+import Sidebar from './sidebar';
 
 
 class Maincontainer extends Component {
@@ -20,7 +20,7 @@ class Maincontainer extends Component {
 							<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
 						</div>
 						<div className="meta">
-							<time className="published" datetime="2015-11-01">November 1, 2015</time>
+							<time className="published" dateTime="2015-11-01">November 1, 2015</time>
 							<a href="/" className="author"><span className="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
 						</div>
 					</header>
@@ -46,7 +46,7 @@ class Maincontainer extends Component {
 							<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
 						</div>
 						<div className="meta">
-							<time className="published" datetime="2015-10-25">October 25, 2015</time>
+							<time className="published" dateTime="2015-10-25">October 25, 2015</time>
 							<a href="/" className="author"><span className="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
 						</div>
 					</header>
@@ -72,7 +72,7 @@ class Maincontainer extends Component {
 							<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
 						</div>
 						<div className="meta">
-							<time className="published" datetime="2015-10-22">October 22, 2015</time>
+							<time className="published" dateTime="2015-10-22">October 22, 2015</time>
 							<a href="/" className="author"><span className="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
 						</div>
 					</header>

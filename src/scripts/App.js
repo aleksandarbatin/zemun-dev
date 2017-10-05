@@ -2,12 +2,12 @@
 import React, { Component } from 'react';
 
 // components
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
-import Menu from './components/menu/menu';
-import Mainview from './components/mainView/mainView';
-import Maincontainer from './components/mainContainer/mainContainer';
-import Sidebar from './components/sidebar/sidebar';
+import Header from './components/header';
+import Footer from './components/footer';
+import Menu from './components/menu';
+import Mainview from './components/mainView';
+import Maincontainer from './components/mainContainer';
+import Sidebar from './components/sidebar';
 
 
 class App extends Component {
