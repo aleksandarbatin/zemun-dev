@@ -1,10 +1,12 @@
 //-------------------------
-//------------SIDEBAR comp
+//------------ SIDEBAR comp
 //-------------------------
 
 
 import React, { Component } from 'react';
 
+import Minipost from './mini-post';
+import Postlist from './postList';
 
 class Sidebar extends Component {
 	render() {
@@ -24,44 +26,36 @@ class Sidebar extends Component {
 							<div className="mini-posts">
 
 								{/*  Mini Post */}
-									<article className="mini-post">
-										<header>
-											<h3><a href="#">Vitae sed condimentum</a></h3>
-											<time className="published" dateTime="2015-10-20">October 20, 2015</time>
-											<a href="#" className="author"><img src="./images/avatar.jpg" alt="" /></a>
-										</header>
-										<a href="#" className="image"><img src="./images/pic04.jpg" alt="" /></a>
-									</article>
+									<Minipost 
+										title="Vitae sed condimentum"
+										date="October 20, 2015"
+										authorImg="./images/avatar.jpg"
+										postImg="./images/pic04.jpg"
+										/>
 
 								{/*  Mini Post */}
-									<article className="mini-post">
-										<header>
-											<h3><a href="#">Rutrum neque accumsan</a></h3>
-											<time className="published" dateTime="2015-10-19">October 19, 2015</time>
-											<a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
-										</header>
-										<a href="#" className="image"><img src="./images/pic05.jpg" alt="" /></a>
-									</article>
+									<Minipost 
+										title="Vitae sed condimentum"
+										date="October 20, 2015"
+										authorImg="./images/avatar.jpg"
+										postImg="./images/pic05.jpg"
+										/>
 
 								{/*  Mini Post */}
-									<article className="mini-post">
-										<header>
-											<h3><a href="#">Odio congue mattis</a></h3>
-											<time className="published" dateTime="2015-10-18">October 18, 2015</time>
-											<a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
-										</header>
-										<a href="#" className="image"><img src="images/pic06.jpg" alt="" /></a>
-									</article>
+									<Minipost 
+										title="Vitae sed condimentum"
+										date="October 20, 2015"
+										authorImg="./images/avatar.jpg"
+										postImg="./images/pic06.jpg"
+										/>
 
 								{/*  Mini Post */}
-									<article className="mini-post">
-										<header>
-											<h3><a href="#">Enim nisl veroeros</a></h3>
-											<time className="published" dateTime="2015-10-17">October 17, 2015</time>
-											<a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
-										</header>
-										<a href="#" className="image"><img src="images/pic07.jpg" alt="" /></a>
-									</article>
+									<Minipost 
+										title="Lorem ipsum dolor sit"
+										date="October 20, 2015"
+										authorImg="./images/avatar.jpg"
+										postImg="./images/pic07.jpg"
+										/>
 
 							</div>
 						</section>
@@ -70,49 +64,39 @@ class Sidebar extends Component {
 						<section>
 							<ul className="posts">
 								<li>
-									<article>
-										<header>
-											<h3><a href="#">Lorem ipsum fermentum ut nisl vitae</a></h3>
-											<time className="published" dateTime="2015-10-20">October 20, 2015</time>
-										</header>
-										<a href="#" className="image"><img src="images/pic08.jpg" alt="" /></a>
-									</article>
+									<Postlist 
+										title="Lorem ipsum fermentum ut nisl vitae"
+										date="October 20, 2015"
+										img="images/pic08.jpg"
+									/>
 								</li>
 								<li>
-									<article>
-										<header>
-											<h3><a href="#">Convallis maximus nisl mattis nunc id lorem</a></h3>
-											<time className="published" dateTime="2015-10-15">October 15, 2015</time>
-										</header>
-										<a href="#" className="image"><img src="images/pic09.jpg" alt="" /></a>
-									</article>
+									<Postlist 
+										title="Lorem ipsum fermentum ut nisl vitae"
+										date="October 20, 2015"
+										img="images/pic09.jpg"
+									/>
 								</li>
 								<li>
-									<article>
-										<header>
-											<h3><a href="#">Euismod amet placerat vivamus porttitor</a></h3>
-											<time className="published" dateTime="2015-10-10">October 10, 2015</time>
-										</header>
-										<a href="#" className="image"><img src="images/pic10.jpg" alt="" /></a>
-									</article>
+									<Postlist 
+										title="Lorem ipsum fermentum ut nisl vitae"
+										date="October 20, 2015"
+										img="images/pic10.jpg"
+									/>
 								</li>
 								<li>
-									<article>
-										<header>
-											<h3><a href="#">Magna enim accumsan tortor cursus ultricies</a></h3>
-											<time className="published" dateTime="2015-10-08">October 8, 2015</time>
-										</header>
-										<a href="#" className="image"><img src="images/pic11.jpg" alt="" /></a>
-									</article>
+									<Postlist 
+										title="Lorem ipsum fermentum ut nisl vitae"
+										date="October 20, 2015"
+										img="images/pic11.jpg"
+									/>
 								</li>
 								<li>
-									<article>
-										<header>
-											<h3><a href="#">Congue ullam corper lorem ipsum dolor</a></h3>
-											<time className="published" dateTime="2015-10-06">October 7, 2015</time>
-										</header>
-										<a href="#" className="image"><img src="images/pic12.jpg" alt="" /></a>
-									</article>
+									<Postlist 
+										title="Lorem ipsum fermentum ut nisl vitae"
+										date="October 20, 2015"
+										img="images/pic12.jpg"
+									/>
 								</li>
 							</ul>
 						</section>

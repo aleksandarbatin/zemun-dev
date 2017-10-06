@@ -5,13 +5,13 @@
 
 import React, { Component } from 'react';
 
-class Mainview extends Component {
+class Bigview extends Component {
 	render() {
 		return (
-			<section className="mainView">
+			<section className="bigView">
 				<article className="teaser teasr--full">
 					<div className="imgWrapper">
-						<img src="https://static.pexels.com/photos/161893/seattle-washington-city-cities-161893.jpeg" alt="main-view"/>
+						<img src="./images/city-zemun.jpg" alt="main-view"/>
 					</div>
 					<div className="content">
 						<h2>Ipsum consequat lorem</h2>
@@ -26,4 +26,4 @@ class Mainview extends Component {
 	}
 }
 
-export default Mainview;
+export default Bigview;
