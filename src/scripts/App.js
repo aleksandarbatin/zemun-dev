@@ -11,17 +11,24 @@ import Sidebar from './components/sidebar';
 
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <Menu />
-        <Bigview />
-        <Maincontainer />     
-        <Footer />
-      </div>
-    );
-  }
+    constructor(props){
+        super(props);
+        this.state = { showMenu: false };
+        this.toggleMenu = this.toggleMenu.bind(this);
+    }
+    toggleMenu() {
+        this.state.showMenu = !this.state.showMenu //Flips true/false
+    }
+    render() {
+        return (
+            <div className="App">
+                <Header toggleFunction={this.toggleMenu} />
+                <Menu showMenu={this.state.showMenu} />
+                <Bigview />
+                <Maincontainer />     
+            </div>
+        );
+    }
 }
 
 export default App;

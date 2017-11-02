@@ -21,6 +21,7 @@ class Maincontainer extends Component {
 				   		  author="Jane Doe"
 				   		  authorImg="images/avatar.jpg"
 				   		  postImg="images/pic01.jpg" 
+				   		  initialLike={0}
 				   		  postText="Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. 
 				   		  Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. 
 				   		  Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. 
@@ -33,6 +34,7 @@ class Maincontainer extends Component {
 				   		  author="Susan Sontag"
 				   		  authorImg="images/avatar.jpg"
 				   		  postImg="images/pic02.jpg" 
+				   		  initialLike={0}
 				   		  postText="Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. 
 				   		  Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. 
 				   		  Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. 
@@ -45,6 +47,7 @@ class Maincontainer extends Component {
 				   		  author="Jane Doe"
 				   		  authorImg="images/avatar.jpg"
 				   		  postImg="images/pic03.jpg" 
+				   		  initialLike={0}
 				   		  postText="Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. 
 				   		  Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. 
 				   		  Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. 

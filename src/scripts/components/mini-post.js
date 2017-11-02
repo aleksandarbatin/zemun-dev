@@ -11,7 +11,7 @@ class Minipost extends Component {
 		return (
 			<article className="mini-post">
 				<header>
-					<h3><a href="#">{this.props.title}</a></h3>
+					<h3>{5 == 2 ? "Fuck" : "Hello!"}<a href="#">{this.props.title}</a></h3>
 					<time className="published" dateTime="2015-10-20">{this.props.date}</time>
 					<a href="/" className="author"><img src={this.props.authorImg} alt="" /></a>
 				</header>

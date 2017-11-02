@@ -1,5 +1,6 @@
+
 //-------------------------
-//------------ HEADER comp
+//------------HEADER comp
 //-------------------------
 
 
@@ -28,8 +29,8 @@ class Header extends Component {
 								<input type="text" name="query" placeholder="Search" />
 							</form>
 						</li>
-						<li className="menu">
-							<a className="fa-bars" href="#menu">Menu</a>
+						<li className="menu" onClick={this.toggleMenu}>
+							<a className="fa-bars">Menu</a>
 						</li>
 					</ul>
 				</nav>

@@ -212,6 +212,7 @@
 				border-top: dotted 1px _palette(border);
 				margin: (_size(element-margin) * 0.75) 0 0 0;
 				padding: (_size(element-margin) * 0.75) 0 0 0;
+				width: 100%;
 
 				&:first-child {
 					border-top: 0;

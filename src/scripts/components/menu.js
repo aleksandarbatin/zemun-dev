@@ -6,9 +6,10 @@
 import React, { Component } from 'react';
 
 class Menu extends Component {
+	
 	render() {
 		return (
-			<section id="menu">
+			<section id="menu" className={(this.props.showMenu ? "visible" : "")}>
 
 				{/* Search */}
 					<section>

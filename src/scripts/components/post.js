@@ -7,6 +7,18 @@ import React, { Component } from 'react';
 
 
 class Post extends Component {
+	constructor(props) {
+		super();
+		this.state = {
+			like: props.initialLike,
+			status: 0
+		};
+	}
+	heartLike() {
+		this.setState({
+			like: this.state.like + 1
+		});
+	}
 	render() {
 		return (
 			<article className="post">
@@ -28,7 +40,7 @@ class Post extends Component {
 					</ul>
 					<ul className="stats">
 						<li><a href="/">General</a></li>
-						<li><a href="/" className="icon fa-heart">28</a></li>
+						<li><span className="icon fa-heart" onClick={this.heartLike.bind(this)}>{this.state.like}</span></li>
 						<li><a href="/" className="icon fa-comment">128</a></li>
 					</ul>
 				</footer>
