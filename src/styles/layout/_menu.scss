@@ -84,14 +84,19 @@
 			}
 		}
 
-		body.is-menu-visible & {
-			@include vendor('transform', 'translateX(0)');
-			visibility: visible;
-		}
+		// body.is-menu-visible & {
+		// 	@include vendor('transform', 'translateX(0)');
+		// 	visibility: visible;
+		// }
 
 		@include breakpoint(small) {
 			> * {
 				padding: _size(section-spacing-small);
 			}
 		}
+	}
+
+	.visible {
+		@include vendor('transform', 'translateX(0)!important');
+		visibility: visible!important;
 	}

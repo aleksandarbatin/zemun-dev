@@ -29,8 +29,8 @@ class Header extends Component {
 								<input type="text" name="query" placeholder="Search" />
 							</form>
 						</li>
-						<li className="menu" onClick={this.toggleMenu}>
-							<a className="fa-bars">Menu</a>
+						<li className="menu" >
+							<a className="fa-bars" onClick={this.props.toggleMenu}>Menu</a>
 						</li>
 					</ul>
 				</nav>
