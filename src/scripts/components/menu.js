@@ -9,7 +9,7 @@ class Menu extends Component {
 	
 	render() {
 		return (
-			<section id="menu" className={(this.props.showMenu ? "visible " : "")}>
+			<section id="menu" className={(this.props.showMenu ? "visible " : "")} >
 
 				{/* Search */}
 				<section>
