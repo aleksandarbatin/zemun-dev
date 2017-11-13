@@ -8,6 +8,7 @@ import Menu from './components/menu';
 import Bigview from './components/bigView';
 import Maincontainer from './components/mainContainer';
 import Sidebar from './components/sidebar';
+import Dagobah from './components/dagobah';
 
 
 class App extends Component {
@@ -46,7 +47,8 @@ class App extends Component {
                 </div>
                 <div ref={node => { this.node = node; }}>
                     <Menu showMenu={this.state.showMenu} /> 
-                </div>    
+                </div> 
+                <Dagobah />   
             </div>
         );
     }
