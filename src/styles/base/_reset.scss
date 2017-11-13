@@ -61,3 +61,8 @@ menu, nav, section,
 summary {
     display: block;
 }
+
+::selection {
+    color: #000!important;
+    background-color: transparent!important;
+}

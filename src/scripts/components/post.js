@@ -40,7 +40,7 @@ class Post extends Component {
 					</ul>
 					<ul className="stats">
 						<li><a href="/">General</a></li>
-						<li><span className="icon fa-heart" onClick={this.heartLike.bind(this)}>{this.state.like}</span></li>
+						<li><a className="icon fa-heart" onClick={this.heartLike.bind(this)}>{this.state.like}</a></li>
 						<li><a href="/" className="icon fa-comment">128</a></li>
 					</ul>
 				</footer>

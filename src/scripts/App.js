@@ -48,7 +48,6 @@ class App extends Component {
                 <div ref={node => { this.node = node; }}>
                     <Menu showMenu={this.state.showMenu} /> 
                 </div> 
-                <Dagobah />   
             </div>
         );
     }
