@@ -11,7 +11,7 @@ class Bigview extends Component {
 			<section className="bigView">
 				<article className="teaser teasr--full">
 					<div className="imgWrapper">
-						<img src="./images/city-zemun.jpg" alt="main-view"/>
+						<img src="./images/zemun-gardos.jpg" alt="main-view"/>
 					</div>
 					<div className="content">
 						<h2>Ipsum consequat lorem</h2>
